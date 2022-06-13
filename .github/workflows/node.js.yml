@@ -37,3 +37,4 @@ jobs:
         default_author: github_actions
         message: "Build and commit last changes"
         pathspec_error_handling: ignore
+        new_branch: action-build
