@@ -39,4 +39,4 @@ jobs:
         pathspec_error_handling: ignore
         new_branch: action-build
       env:
-        GITHUB_TOKEN: ${{ github.token }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
