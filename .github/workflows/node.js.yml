@@ -37,3 +37,4 @@ jobs:
         author_email: matvik.net@gmail.com
         message: "Build and commit last changes"
         pathspec_error_handling: ignore
+        new_branch: master-build
