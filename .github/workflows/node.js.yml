@@ -33,8 +33,7 @@ jobs:
     - name: Commit changes
       uses: EndBug/add-and-commit@v8
       with:
-        author_name: Serhii Kasianov
-        author_email: matvik.net@gmail.com
+        repository: ${{github.event.client_payload.pull_request.head.repo.full_name}}
+        ref: ${{github.event.client_payload.pull_request.head.ref}}
         message: "Build and commit last changes"
         pathspec_error_handling: ignore
-        new_branch: master-build
